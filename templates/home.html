@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+
+{% load static %}  
+
+
+{%block content%}
+
+<!---hero-->
+<section class="hero" id="home">
+    <div class="main-content" data-aos="fade-in">
+        <h4>Hi, There!</h4>
+        <h1>I'm <span>Ose</span></h1>
+        <p>Proud fullstack developer, mastering both ends of the code! 💻✨ #FullstackDev #CodingWizard</p>
+        <div class="social">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+        </div>
+
+        <div class="main-btn">
+            <a href="#" class="btn">Hire me</a>
+            <a href="#" class="btn btn2">Download CV</a>
+        </div>
+    </div>
+
+    <div class="main-content2">
+        <img src="{% static 'img/shape.png' %}" class="shape">
+        <img src="{% static 'img/self.png' %}" class="me">
+    </div>
+</section>
+
+<!---about-->
+<section class="about" id="about">
+    <div class="about-img" data-aos="zoom-in-down">
+        <img src="{% static 'img/about.png' %}">
+    </div>
+
+    <div class="about-text" data-aos="zoom-in-up">
+        <h2>I am a Fullstack <span>Developer</span>
+        <div class="exp-area">
+            <p class="exp">
+                Experience: 
+                <span>1 Year</span>
+            </p>
+
+            <p class="exp">
+                Specialty: 
+                <span>Web Designer, Web Developer</span>
+            </p>
+
+            <p class="exp">
+                Address: 
+                <span>900 Fanshawe College Blvd, London, ON CANADA</span>
+            </p>
+
+            <p class="exp">
+                Email: 
+                <span>ose.sunday@gmail.com</span>
+            </p>
+
+            <p class="exp">
+                Phone: 
+                <span>2263857007</span>
+            </p>
+
+            <p class="exp">
+                Freelance: 
+                <span>Available</span>
+            </p>
+
+        </div>
+        <a href="#" class="btn">View All Projects</a>
+    </div>
+</section>
+
+<!---services-->
+<section class="services" id="services">
+    <div class="center-text" data-aos="fade-down">
+        <h2>My <span>Services</span></h2>
+    </div>
+
+    <div class="services-content" data-aos="zoom-in-up">
+        <div class="box">
+            <i class="uil uil-arrow"></i>
+            <h3>Frontend/ Web Design</h3>
+            <p>I am highly proficient in front-end development. My FrontEnd skills and experience enables me to create visually appealing, responsive, and interactive web interfaces.</p>
+            <h5>TECH STACK</h5>
+            <ul>
+                <li>HTML</li>
+                <li> CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <i class="uil uil-brackets-curly"></i>
+            <h3>Backend/Web Development</h3>
+            <p>I excel in back-end development. My expertise allows me to build robust and efficient web applications, leveraging these technologies to create powerful and scalable solutions.</p>
+            <h5>TECH STACK</h5>
+            <ul>
+                <li>Python</li>
+                <li> Django</li>
+            </ul>
+        </div>
+
+
+        <div class="box">
+            <i class="uil uil-github-alt"></i>
+            <h3>Version Control</h3>
+            <p>I possess advanced proficiency in version control, particularly on GitHub. My mastery of GitHub enables streamlined collaboration and efficient tracking of code changes, promoting effective team workflows and project management.</p>
+            <h5>TECH STACK</h5>
+            <ul>
+                <li>Github</li>
+            </ul>
+        </div>
+
+
+    </div>
+</section>
+
+<!---portfolio-->
+<section class="portfolio" id="portfolio">
+    <div class="center-text" data-aos="fade-down">
+        <h2>My <span>Portfolio</span></h2>
+    </div>
+
+    <div class="Portfolio-content" data-aos="zoom-in-up">
+        <div class="row">
+            <img src="{% static 'img/port-1.jpg' %}">
+            <div class="main-row">
+                <div class="row-text">
+                    <h5>Company Website</h5>
+                </div>
+                <div class="row-icon">
+                    <i class="ri-github-fill"></i>
+                </div>
+            </div>
+            <h4>grahouglo.com</h4>
+        </div>
+
+        <div class="row">
+            <img src="{% static 'img/port-2.jpg' %}">
+            <div class="main-row">
+                <div class="row-text">
+                    <h5>E-commerce Website</h5>
+                </div>
+                <div class="row-icon">
+                    <i class="ri-github-fill"></i>
+                </div>
+            </div>
+            <h4>zorah.com</h4>
+        </div>
+
+        <div class="row">
+            <img src="{% static 'img/port-3.jpg' %}">
+            <div class="main-row">
+                <div class="row-text">
+                    <h5>Company Website</h5>
+                </div>
+                <div class="row-icon">
+                    <i class="ri-github-fill"></i>
+                </div>
+            </div>
+            <h4>andjemztech.com</h4>
+        </div>
+
+    </div>
+</section>
+
+<!---contact-->
+<section class="contact" id="contact">
+    <div class="center-text" data-aos="fade-down">
+        <h2>Contact <span>Me</span></h2>
+    </div>
+
+    <div class="contact-form" data-aos="zoom-in">
+        <form action="">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Email Address.." required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
+            <input type="submit" name="" value="Send Message" class="send-btn">
+        </form>
+    </div>
+</section>
+
+
+
+{% endblock %}
