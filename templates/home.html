@@ -20,7 +20,7 @@
 
         <div class="main-btn">
             <a href="#about" class="btn">Hire me</a>
-            <a href="{{ https://www.dropbox.com/scl/fi/3mgge4gxixjdm5sq3g3vt/Resume-Oseyenbhin.pdf?rlkey=fskdi591bcobn77jo4n3wfwyn&dl=0 }}" target="_blank" class="btn btn2">Download CV</a>
+            <a href="{% url 'downloadfile' %}" target="_blank" class="btn btn2">Download CV</a>
         </div>
     </div>
 
@@ -70,7 +70,7 @@
             </p>
 
         </div>
-        <a href="#" class="btn">View All Projects</a>
+        <a href="#portfolio" class="btn">View All Projects</a>
     </div>
 </section>
 
@@ -176,10 +176,11 @@
     </div>
 
     <div class="contact-form" data-aos="zoom-in">
-        <form action="">
-            <input type="text" placeholder="Your name" required>
-            <input type="email" placeholder="Email Address.." required>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
+        <form action="" method="post">
+            {% csrf_token %}
+                    
+                    {{ form.as_p }}
+
             <input type="submit" name="" value="Send Message" class="send-btn">
         </form>
     </div>

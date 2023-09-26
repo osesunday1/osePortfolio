@@ -6,4 +6,6 @@ from django.conf import settings
 
 urlpatterns = [
     path('',  views.home, name = 'home'),
+    path('clientfeedback/', include('clientfeedback.urls')),
+    path('downloadfile/', views.downloadfile, name='downloadfile')
 ]
