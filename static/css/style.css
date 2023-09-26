@@ -116,7 +116,8 @@ section{
 	background-color: #fff;
 }
 .main-content h4{
-	font-size: 1.6rem;
+	font-size: 1.8rem;
+	font-family: 'Kaushan Script', cursive;
 }
 .main-content h1{
 	font-size: var(--h1-font);
