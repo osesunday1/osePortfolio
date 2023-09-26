@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import StreamingHttpResponse
 from django.shortcuts import redirect
 from clientfeedback.forms import *
 from clientfeedback.models import *
@@ -28,7 +27,8 @@ def home (request):
 
 
 def downloadfile(request):
-    # Dropbox URL of the file you want to link
+    
     downloadfile = "https://www.dropbox.com/scl/fi/3mgge4gxixjdm5sq3g3vt/Resume-Oseyenbhin.pdf?rlkey=fskdi591bcobn77jo4n3wfwyn&dl=0"
+    
     
     return redirect(downloadfile)
