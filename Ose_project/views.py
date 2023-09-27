@@ -28,7 +28,7 @@ def home (request):
 
 def downloadfile(request):
     
-    downloadfile = "https://www.dropbox.com/scl/fi/3mgge4gxixjdm5sq3g3vt/Resume-Oseyenbhin.pdf?rlkey=fskdi591bcobn77jo4n3wfwyn&dl=0"
+    downloadfile = "https://www.dropbox.com/scl/fi/bnr0o22i4eymdhie9zn0e/Resume-Oseyenbhin.pdf?rlkey=eb5krwvmi89cfvs4spe84polz&dl=0"
     
     
     return redirect(downloadfile)
